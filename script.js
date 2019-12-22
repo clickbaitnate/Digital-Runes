@@ -1,19 +1,11 @@
-var rune;
 
-function getRandomInt(max) {
-return Math.floor(Math.random() * Math.floor(max));
+function shuffle(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
 }
 
- switch (getRandomInt(3)) {
-  case 0:   
-    console.log("Fehu");
-    break;
-  case 1: 
-    console.log("Uruz");
-    break;
-  case 2:
-    console.log("Thurisaz"); 
-
- };
- 
- ;
+let runes = ["fehu", "uruz", "thurisaz", "ansuz", "raidho", "kenaz", "gifu", "wunjo", "hagall", "nied", "isa", "jera", "eihwaz", "perdhro", "eolh", "sigel", "tir", "beorc", "ehwaz", "mannaz", "lagaz", "ing", "daeg", "othel"];
+shuffle(runes);
+console.log(runes);

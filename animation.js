@@ -1,2 +1,2 @@
-gsap.to(".emoji1", {duration: 4, x: 450, ease: "elastic"});
+gsap.to(".emoji1", {duration: 4, xPercent: 600 , ease: "elastic"});
 
